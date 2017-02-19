@@ -12,11 +12,11 @@ $(document).ready(function(){
 		if (!item.hasClass('accordeon__item_active')) {
 			items.removeClass('accordeon__item_active');
 			item.addClass('accordeon__item_active');
-			otherContent.slideUp(duration);
-			content.slideDown(duration);
+			otherContent.stop(true, true).slideUp(duration);
+			content.stop(true, true).slideDown(duration);
 		} else {
 			item.removeClass('accordeon__item_active');
-			content.slideUp(duration);
+			content.stop(true, true).slideUp(duration);
 		};
 	});
 
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 		if (!$this.closest('.accordeon__list').length) {
 			$('.accordeon__item').removeClass('accordeon__item_active');
-			$('.accordeon__inner').slideUp(duration);
+			$('.accordeon__inner').stop(true, true).slideUp(duration);
 		};
 	});
 });
