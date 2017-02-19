@@ -1,17 +1,21 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-body{
-    margin:8px;
+
+body {
+    margin: 8px;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
+
 .tabs__controls, .tabs__controls1 {
     text-align: left;
-    padding-left:2%;
+    padding-left: 2%;
 }
+
 .tabs__controls-item, .tabs__controls1-item {
     display: inline-block;
     margin: 0 1px -1px 0;
@@ -20,30 +24,36 @@ ul{
     border-radius: 10px 10px 0 0;
     font-size: 18px;
 }
+
 .tabs__controls-item_active, .tabs__controls1-item_active{
     background: #F9F9F9;
     border-bottom: 1px solid #F9F9F9;
 }
-.tabs__controls-link, .tabs__controls1-link{
+
+.tabs__controls-link, .tabs__controls1-link {
     text-decoration: none;
     color: #949494;
     display: inline-block;
     padding: 3px 15px;
 }
-.tabs__controls-item:hover .tabs__controls-link, .tabs__controls1-item:hover .tabs__controls1-link{
+
+.tabs__controls-item:hover .tabs__controls-link, .tabs__controls1-item:hover .tabs__controls1-link {
     color: #ff7d8a;
 }
-.tabs__controls-item_active .tabs__controls-link, .tabs__controls1-item_active .tabs__controls1-link{
+
+.tabs__controls-item_active .tabs__controls-link, .tabs__controls1-item_active .tabs__controls1-link {
     color: #ff7d8a;
 }
-.tabs__list, .tabs__list1{
+
+.tabs__list, .tabs__list1 {
     width: 60%;
-    margin-left:1%;
+    margin-left: 1%;
     margin-bottom: 50px;
 }
+
 .tabs__item, .tabs__item1 {
     display: inline-block;
-    padding:20px;
+    padding: 20px;
     display: none; /* прячем все блоки */
     border: 1px solid #DDD;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
@@ -51,6 +61,7 @@ ul{
     text-align: center;
     background: #F9F9F9;
 }
+
 .tabs__item_active, .tabs__item1_active {
     display: block; /* показываем нужный блок */
 }
