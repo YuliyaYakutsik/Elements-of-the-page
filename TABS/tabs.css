@@ -20,7 +20,7 @@ ul{
     border-radius: 10px 10px 0 0;
     font-size: 18px;
 }
-.tabs__controls-item_active .tabs__controls1-item_active{
+.tabs__controls-item_active, .tabs__controls1-item_active{
     background: #F9F9F9;
     border-bottom: 1px solid #F9F9F9;
 }
