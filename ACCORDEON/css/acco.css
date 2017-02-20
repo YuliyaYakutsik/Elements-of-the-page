@@ -1,9 +1,11 @@
 ul{
 	list-style-type: none;
 }
+
 .accordeon__item{
 	margin-bottom: 35px;
 }
+
 .accordeon__trigger{
 	display:block;
 	position: relative;
@@ -12,6 +14,7 @@ ul{
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
 .accordeon__trigger::before{
 	content: "";
 	display:block;
@@ -25,14 +28,17 @@ ul{
 	border-top:7px solid #18BC9C;
 	transition:.4s;
 }
+
 .accordeon__inner{
 	padding:0;
 	padding-top: 14px;
 	display:none;
 }
+
 .accordeon__item_active .accordeon__trigger{
 	color:#ff7d8a;
 }
+
 .accordeon__item_active .accordeon__trigger::before{
 	transform: rotate(-90deg);
 	border-top-color: #ff7d8a;
