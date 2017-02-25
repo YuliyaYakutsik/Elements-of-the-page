@@ -18,12 +18,16 @@ li{
 	list-style-type: none;
 }
 
+.nav{
+	position: relative;
+}
+
 .nav__list{
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 100px;
+	height: 105px;
 	z-index: 5;
 	background: rgba(255, 255, 255, 0.5);
 }
@@ -38,7 +42,9 @@ li{
 .nav__item{
 	display: inline-block;
 	width: 13%;
-	margin: 3%;
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-top: 1%;
 	border: 2px solid transparent;
 	transition: border 1s;
 }
