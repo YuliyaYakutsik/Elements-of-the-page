@@ -67,7 +67,6 @@ li{
   	box-shadow: 15px 0px 15px -12px rgba(51, 51, 51, 0.5);
   	padding: 20px;
   	font-size: 35px;
-  	background: blue;
   	opacity: 1;
   	-webkit-transition: 250ms linear;
   	-o-transition: 250ms linear;
@@ -84,7 +83,6 @@ li{
 	padding: 20px;
 	text-align: justify;
 	font-size: 32px;
-	background: lightblue;
 }
 
 .footer{
@@ -92,7 +90,6 @@ li{
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: red;
 	height: 50px;
 	max-width: 800px;
 	margin: 0 auto;
