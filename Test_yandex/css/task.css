@@ -94,4 +94,5 @@ li{
 	max-width: 800px;
 	margin: 0 auto;
 	background: #fff;
+	border-top: 1px solid #999;
 }
