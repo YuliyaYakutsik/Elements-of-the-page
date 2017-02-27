@@ -17,7 +17,7 @@ $(document).ready(function(){
 		} else {
 			item.removeClass('accordeon__item_active');
 			content.stop(true, true).slideUp(duration);
-		};
+		}
 	});
 
 	$(document).on('click', function(e) {
@@ -27,6 +27,6 @@ $(document).ready(function(){
 		if (!$this.closest('.accordeon__list').length) {
 			$('.accordeon__item').removeClass('accordeon__item_active');
 			$('.accordeon__inner').stop(true, true).slideUp(duration);
-		};
+		}
 	});
 });
