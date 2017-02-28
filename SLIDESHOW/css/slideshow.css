@@ -8,7 +8,7 @@ ul{
 }
 
 li{
-	list-style-type:none;
+	list-style-type: none;
 }
 
 .wrapper{
@@ -17,8 +17,8 @@ li{
 }
 
 .container{
-	margin:0 auto;
-	max-width:1140px;
+	margin: 0 auto;
+	max-width: 1140px;
 	text-align: center;
 	position: relative;
 }
