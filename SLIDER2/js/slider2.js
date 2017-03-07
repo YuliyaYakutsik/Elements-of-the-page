@@ -30,15 +30,15 @@ var slider = (function(){
 
 				if ($this.hasClass('slider__controls-button_next')) {
 					if (nextSlide.length) {
-						_this.moveSlide (nextSlide, 'forward');
+						_this.moveSlide(nextSlide, 'forward');
 					} else {
-						_this.moveSlide (firstSlide, 'forward');
+						_this.moveSlide(firstSlide, 'forward');
 					}
 				} else {
 					if (prevSlide.length) {
-						_this.moveSlide (prevSlide, 'backward');
+						_this.moveSlide(prevSlide, 'backward');
 					} else {
-						_this.moveSlide (lastSlide, 'backward');
+						_this.moveSlide(lastSlide, 'backward');
 					}
 				}
 			});
@@ -56,11 +56,11 @@ var slider = (function(){
 
 				_this.clearTimer();
 
-				_this.moveSlide (reqSlide, direction);
+				_this.moveSlide(reqSlide, direction);
 			});
 		},
 
-		moveSlide: function (slide, direction) {
+		moveSlide: function(slide, direction) {
 
 			var _this = this;
 			var container = slide.closest('.slider');
@@ -104,7 +104,7 @@ var slider = (function(){
 			}
 		},
 
-		createDots: function () {
+		createDots: function() {
 			
 			var _this = this;
 			var container = $('.slider');
@@ -118,14 +118,14 @@ var slider = (function(){
 				var dotsContainer = $this.find('.slider__dots');
 
 				for (var i = 0; i < slides.length; i++) {
-					dotsContainer.append(dotMarkUp)
+					dotsContainer.append(dotMarkUp);
 				}
 
 				_this.setActiveDot(dotsContainer);
 			});
 		},
 
-		setActiveDot: function (container) {
+		setActiveDot: function(container) {
 			
 			var slides = container.closest('.slider__list--wrap').find('.slider__item');
 
@@ -137,7 +137,7 @@ var slider = (function(){
 				.removeClass('active');
 		},
 
-		autoSwitch: function(){
+		autoSwitch: function() {
 
 			var _this = this;
 
@@ -148,14 +148,14 @@ var slider = (function(){
 				var firstSlide = slides.first();
 
 				if (nextSlide.length) {
-						_this.moveSlide (nextSlide, 'forward');
-					} else {
-						_this.moveSlide (firstSlide, 'forward');
-					};
+					_this.moveSlide (nextSlide, 'forward');
+				} else {
+					_this.moveSlide (firstSlide, 'forward');
+				}
 			}, timerDuration)
 		},
 
-		clearTimer: function () {
+		clearTimer: function() {
 			if (timer) {
 				clearInterval(timer);
 				this.autoSwitch();
