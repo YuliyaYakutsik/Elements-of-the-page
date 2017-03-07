@@ -16,29 +16,29 @@ $(document).ready(function() {
 
 		if ($this.hasClass('slider__controls-button_next')) {
 			if (nextSlide.length) {
-				findRequiredPosition (nextSlide)
-				activeClass (nextSlide);
+				findRequiredPosition(nextSlide);
+				activeClass(nextSlide);
 			} else {
-				findRequiredPosition (firstSlide)
-				activeClass (firstSlide);
+				findRequiredPosition(firstSlide);
+				activeClass(firstSlide);
 			}
 		} else {
 			if (prevSlide.length) {
-				findRequiredPosition (prevSlide)
-				activeClass (prevSlide);
+				findRequiredPosition(prevSlide);
+				activeClass(prevSlide);
 			} else {
-				findRequiredPosition (lastSlide)
-				activeClass (lastSlide);
+				findRequiredPosition(lastSlide);
+				activeClass(lastSlide);
 			}
 		}
 
 		list.css('left', '-=' + requiredPosition + 'px');
 
-		function activeClass (reqSlide) {
+		function activeClass(reqSlide) {
 			reqSlide.addClass('active').siblings().removeClass('active');
 		}
 
-		function findRequiredPosition (slide) {
+		function findRequiredPosition(slide) {
 			requiredPosition = slide.offset().left - sliderOffset;
 		}
 	});
