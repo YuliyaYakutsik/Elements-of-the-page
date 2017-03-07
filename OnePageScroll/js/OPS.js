@@ -26,7 +26,7 @@ $(document).ready(function() {
 					screen++;
 				}
 			}
-		};
+		}
 
 		var position = (-screen * 100) +'%';
 
